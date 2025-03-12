@@ -11,12 +11,18 @@ body {
 #hero {
     padding: 80px 20px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #222;
+    margin: 0;
 }
 
 h1 span {
@@ -28,19 +34,25 @@ p {
     color: #555;
     max-width: 600px;
     margin: 10px auto;
+    line-height: 1.5;
 }
 
+/* CTA Buttons */
 .cta-buttons {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .primary-btn, .secondary-btn {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    margin: 5px;
+    transition: 0.3s ease-in-out;
 }
 
 .primary-btn {
@@ -48,8 +60,48 @@ p {
     color: white;
 }
 
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
 .secondary-btn {
     background-color: transparent;
     border: 1px solid #007bff;
     color: #007bff;
+}
+
+.secondary-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }

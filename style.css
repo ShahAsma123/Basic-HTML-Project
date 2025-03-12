@@ -1,19 +1,55 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 10px;
+/* Hero Section */
+#hero {
+    padding: 80px 20px;
+    background-color: #fff;
 }
 
-button {
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+h1 span {
+    color: #007bff;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.primary-btn, .secondary-btn {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
+    border: none;
+    margin: 5px;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
 }
